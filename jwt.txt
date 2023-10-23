@@ -1,0 +1,17 @@
+String lowSig = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"+
+"eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ"
++"코스"
+
+BASE64(헤더).
+BASE64(페이로드=본문).
+BASE64(HS256암호화 (lowSig))
+ -> 라이브러리를 쓰면 간단하게 가능
+
+<!-- https://mvnrepository.com/artifact/com.auth0/java-jwt -->
+<dependency>
+    <groupId>com.auth0</groupId>
+    <artifactId>java-jwt</artifactId>
+    <version>3.10.2</version>
+</dependency>
+
+
